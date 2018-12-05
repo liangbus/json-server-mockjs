@@ -1,0 +1,43 @@
+{
+	"code": "SUCCESS",
+	"type": "1",
+	"msg": "你说是就是",
+	"data": {
+		"avaliable": 200,
+		"freezing": 94,
+		"pointDetails": [{
+				"id": 23,
+				"corpId": 2,
+				"appId": 12,
+				"uid": 187,
+				"point": 200,
+				"orderNo": "",
+				"status": 1,
+				"operationType": 4,
+				"createdAt": "2018-11-23 19:46:19"
+			},
+			{
+				"id": 32,
+				"corpId": 2,
+				"appId": 12,
+				"uid": 187,
+				"point": 49,
+				"orderNo": "gdnome004",
+				"status": 2,
+				"operationType": 1,
+				"createdAt": "2018-11-24 11:49:27"
+			},
+			{
+				"id": 33,
+				"corpId": 2,
+				"appId": 12,
+				"uid": 187,
+				"point": 45,
+				"orderNo": "gdnome005",
+				"status": 2,
+				"operationType": 1,
+				"createdAt": "2018-11-24 11:55:24"
+			}
+		]
+	}
+}
