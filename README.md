@@ -106,5 +106,7 @@ const mockData = Mock.mock({
 module.exports = mockData
 ```
 
+_如不想用 ip+:port 形式访问的，可以通话 nginx 配置个 server 进行端口转发_
+
 初学 nodejs 仍有很多可以优化的地方，有问题欢迎提出讨论，且欢迎大家共同维护
 共勉

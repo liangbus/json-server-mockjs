@@ -2,7 +2,7 @@
 
 const path = require('path');
 const gulp = require('gulp');
-const connect = require('gulp-connect')
+// const connect = require('gulp-connect')
 const nodemon = require('gulp-nodemon');
 const browserSync = require('browser-sync').create();
 const serverPath = path.resolve(__dirname);
@@ -18,11 +18,11 @@ gulp.task('browser-sync', ['nodemon'], function() {
 
 // 监听文件 配置里启动 nodemon 任务
 gulp.task('mock', ['nodemon'], function() {
-  gulp.watch(['./db.js', './response/**', './rules/**'], ['bs-delay']);
+  gulp.watch(['./db.js', './response/**', './rules/**']);
   console.log('>>>>>>>working in mock task...')
 });
 
-// 延时刷新
+// 延时刷新 暂时没有使用
 gulp.task('bs-delay', function() {
   console.log('>>>>>>working in task bs-delay...')
   setTimeout(function() {
@@ -30,11 +30,11 @@ gulp.task('bs-delay', function() {
   }, 800);
 });
 
-gulp.task('reload',function(){
-  console.log('>>>>>> reloading .....')
-  gulp.src(['./db.js', './response/**', './rules/**'])
-      .pipe(connect.reload());
-});
+// gulp.task('reload',function(){
+//   console.log('>>>>>> reloading .....')
+//   gulp.src(['./db.js', './response/**', './rules/**'])
+//       .pipe(connect.reload());
+// });
 let started = false
 // 服务器重启
 gulp.task('nodemon', function(cb) {

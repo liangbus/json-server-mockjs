@@ -9,7 +9,7 @@ const mockData = Mock.mock({
         "isSB|1-2": true,
         "from": "@province()"
     },
-    "msg": "you can see me!"
+    "msg": "you can see me!!!"
 })
 
 module.exports = mockData
